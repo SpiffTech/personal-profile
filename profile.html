@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Dirisu Emmanuel's Space</title>
+    <style>
+        :root {
+            --primary-color: #007BFF;
+            --background-color: #000000;
+            --card-background: #1a1a1a;
+            --text-color: #ffffff;
+            --accent-color: #0056b3;
+            --highlight-color: #ffcc00;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            text-align: center;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .hero {
+            background: var(--primary-color);
+            padding: 60px 0;
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            border: 5px solid var(--primary-color);
+            margin: 20px 0;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+        }
+
+        .section {
+            background: var(--card-background);
+            margin: 20px 0;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+        }
+
+        .services ul {
+            list-style: none;
+        }
+
+        .services li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            background: #222;
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        .contact button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+        }
+
+        .contact button:hover {
+            background-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        .highlight {
+            color: var(--highlight-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to Dirisu Emmanuel's Space</h1>
+        <p>Web Developer | Creative Thinker | Innovator</p>
+    </div>
+
+    <div class="profile-picture">
+        <img src="https://scontent.fabv2-2.fna.fbcdn.net/v/t1.6435-9/178744084_3936820306383596_2066036105262237410_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHfYJg2ol0waDhuv6nzZkoUzHRQhmesjvHMdFCGZ6yO8YdrqFf-YNnOdzPSM24AE_rWZF0FHSw86EAGn-_l2SXA&_nc_ohc=jT9bwHS5BhgQ7kNvgGqrKts&_nc_oc=AdhPQosKLTGxygJWA2CbOKMmZNjeiAS5kJMPgcSMMPR4bHte-zHwKlT4G0alR1EJVoY&_nc_zt=23&_nc_ht=scontent.fabv2-2.fna&_nc_gid=AUql4vrbs6tos_ZXVCQZo1j&oh=00_AYCq4rSeZmR2IJwlk-I3s6mtWwWbOpgpXFfcIlgRiTMCpA&oe=67E31AA8" alt="Dirisu Emmanuel's Profile Picture">
+    </div>
+
+    <div class="section about-me">
+        <h2>About Me</h2>
+        <p>Passionate web developer with a creative edge and a deep interest in building user-friendly, efficient web solutions.</p>
+    </div>
+
+    <div class="section services">
+        <h2>My Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Technical Consulting</li>
+        </ul>
+    </div>
+
+    <div class="section portfolio">
+        <h2>Portfolio</h2>
+        <p class="highlight">Coming Soon! Stay tuned for exciting projects.</p>
+    </div>
+
+    <div class="section testimonials">
+        <h2>Testimonials</h2>
+        <p>"Dirisu is a brilliant web developer with incredible attention to detail!" - Happy Client</p>
+        <p>"Working with Dirisu was a joy. Highly recommend his services." - Satisfied Partner</p>
+    </div>
+
+    <div class="section contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
